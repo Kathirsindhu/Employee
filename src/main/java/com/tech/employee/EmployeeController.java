@@ -24,6 +24,10 @@ public class EmployeeController {
 		return empser.addEmp(e);
 	}
 
+	public String hello() {
+		return "hai hello";
+	}
+
 	@PostMapping(value = "/insertAll")
 	public String addEmployeeList(@RequestBody List<Employee> a) {
 		return empser.addEmployeeList(a);
